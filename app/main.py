@@ -90,4 +90,4 @@ async def get_task_status(task_id: int) -> dict:
     task = MOCK_TASKS.get(task_id)
     if task:
         return {"task_id": task_id, "status": task.status}
-    return {"error": "Task not found"}
+    return "task"
